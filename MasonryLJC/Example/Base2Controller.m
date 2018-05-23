@@ -1,24 +1,22 @@
-
 //
-//  BaseController.m
+//  Base2Controller.m
 //  MasonryLJC
 //
 //  Created by LongLong on 2018/5/23.
 //  Copyright © 2018年 learnHard. All rights reserved.
 //
 
-#import "BaseController.h"
+#import "Base2Controller.h"
 
-@interface BaseController ()
+@interface Base2Controller ()
 
 @end
 
-@implementation BaseController
+@implementation Base2Controller
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

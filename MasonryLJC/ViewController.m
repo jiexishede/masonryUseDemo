@@ -77,7 +77,10 @@ UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // 反射的 方式, 高级用法
+    // 检测 有没有教  Base xx controll 的控制器
+    // 有就 导航
     Class cls = NSClassFromString([NSString stringWithFormat:@"Base%@Controller", @(indexPath.row + 1)]);
+    // 注意 这里没有应用控制器 就能创建了!!!
     if (cls) {
         [self.navigationController pushViewController:[cls new] animated:YES];
     }
