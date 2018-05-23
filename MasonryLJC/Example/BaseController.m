@@ -22,10 +22,8 @@
     // 指定 延伸 边界的方向
     // 就不会字啊 Navitionbar tabbar 上面 下面 延伸了
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
     // 只有一个 scroll  会设置 inset 在里面
-//    self.automaticallyAdjustsScrollViewInsets = NO;
-    
+//    self.automaticallyAdjustsScrollViewInsets = NO;    
 }
 
 - (void)didReceiveMemoryWarning {

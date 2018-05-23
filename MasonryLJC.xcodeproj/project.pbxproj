@@ -17,6 +17,7 @@
 		22CB9CE720B5128900CE3E2A /* Base2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CB9CE620B5128900CE3E2A /* Base2Controller.m */; };
 		22CB9CEA20B54F0D00CE3E2A /* MMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CB9CE920B54F0D00CE3E2A /* MMView.m */; };
 		22CB9CED20B55EF600CE3E2A /* testMarginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CB9CEC20B55EF600CE3E2A /* testMarginViewController.m */; };
+		22D4534920B594CA0047F8E6 /* Base3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D4534820B594CA0047F8E6 /* Base3Controller.m */; };
 		3026ED8579FC28C09BF84A32 /* libPods-MasonryLJC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E713F1492955BBB25A1102E4 /* libPods-MasonryLJC.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		22CB9CE920B54F0D00CE3E2A /* MMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMView.m; sourceTree = "<group>"; };
 		22CB9CEB20B55EF600CE3E2A /* testMarginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMarginViewController.h; sourceTree = "<group>"; };
 		22CB9CEC20B55EF600CE3E2A /* testMarginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMarginViewController.m; sourceTree = "<group>"; };
+		22D4534720B594CA0047F8E6 /* Base3Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base3Controller.h; sourceTree = "<group>"; };
+		22D4534820B594CA0047F8E6 /* Base3Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base3Controller.m; sourceTree = "<group>"; };
 		7978D10BC4CB435E80C790A1 /* Pods-MasonryLJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryLJC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryLJC/Pods-MasonryLJC.release.xcconfig"; sourceTree = "<group>"; };
 		C0AFE8CDB30F31D95874A46D /* Pods-MasonryLJC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryLJC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryLJC/Pods-MasonryLJC.debug.xcconfig"; sourceTree = "<group>"; };
 		E713F1492955BBB25A1102E4 /* libPods-MasonryLJC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryLJC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +107,8 @@
 				22CB9CE920B54F0D00CE3E2A /* MMView.m */,
 				22CB9CEB20B55EF600CE3E2A /* testMarginViewController.h */,
 				22CB9CEC20B55EF600CE3E2A /* testMarginViewController.m */,
+				22D4534720B594CA0047F8E6 /* Base3Controller.h */,
+				22D4534820B594CA0047F8E6 /* Base3Controller.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D4534920B594CA0047F8E6 /* Base3Controller.m in Sources */,
 				22AFB35E20B509BB00F5D8C3 /* ViewController.m in Sources */,
 				22AFB36920B509BD00F5D8C3 /* main.m in Sources */,
 				22CB9CED20B55EF600CE3E2A /* testMarginViewController.m in Sources */,

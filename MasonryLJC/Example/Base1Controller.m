@@ -12,6 +12,9 @@
 
 @interface Base1Controller ()
 
+//@property (nonatomic, copy) NSString *e
+@property (nonatomic, strong) UILabel *labelCenter;
+
 @end
 
 @implementation Base1Controller
@@ -61,6 +64,7 @@
         view.layoutMargins = UIEdgeInsetsMake(-20, -20, -20, -20);
         view;
     });
+    
     UIView *v3 = ({
         UIView *view = [UIView new];
         [self.view addSubview:view];
@@ -104,17 +108,50 @@
     
     
     
-    UILabel *lbl1 = ({
-        
-        UILabel *label = [UILabel new];
+    // 属性 压缩
     
+    UILabel *lbl1 = ({
+        UILabel *label = [UILabel new];
         [self.view addSubview:label];
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.view);
             make.left.equalTo(self.view);
         }];
-        label.text = @"左边的文字";
-        label.textColor = [UIColor grayColor];
+        label.text = @"左边的";
+        label.backgroundColor = [UIColor grayColor];
+        [label setContentCompressionResistancePriority:(UILayoutPriorityRequired) forAxis:UILayoutConstraintAxisHorizontal];
+        label;
+    });
+    
+    UILabel *lbl2 = ({
+        
+        UILabel *label = [UILabel new];
+        [self.view addSubview:label];
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.view);
+            make.left.equalTo(lbl1.mas_right);
+        }];
+        label.text = @"中间的文字";
+        label.textAlignment = NSTextAlignmentCenter;
+        label.backgroundColor = [UIColor redColor];
+        label;
+    });
+    
+    self.labelCenter = lbl2;
+    
+    // 开始 点击 右边的 被压缩了
+    UILabel *lbl3 = ({
+        UILabel *label = [UILabel new];
+        [self.view addSubview:label];
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.view);
+            make.right.equalTo(self.view.mas_right);
+            make.left.equalTo(lbl2.mas_right);
+        }];
+        label.text = @"右边";
+        label.backgroundColor = [UIColor grayColor];
+        [label setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        [label setContentCompressionResistancePriority:(UILayoutPriorityRequired) forAxis:UILayoutConstraintAxisHorizontal];
         label;
     });
 
@@ -124,6 +161,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources tha t can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+ 
+    self.labelCenter.text = [self.labelCenter.text stringByAppendingString:@"test"];
 }
 
 /*
