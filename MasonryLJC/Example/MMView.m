@@ -19,6 +19,8 @@
 */
 
 // 获得 尺寸
+
+// autolayout 没有设置 宽高的话就可以使用这个 值 来设定宽度
 - (CGSize)intrinsicContentSize {
     
     CGSize size = [super intrinsicContentSize];
