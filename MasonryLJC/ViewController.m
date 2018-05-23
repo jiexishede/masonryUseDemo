@@ -62,7 +62,7 @@ UITableViewDataSource
     
     static NSString * cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell = nil) {
+    if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
     }
@@ -70,8 +70,7 @@ UITableViewDataSource
     cell.textLabel.text = [NSString stringWithFormat:@"Example%@", @(indexPath.row +1)];
     
     return cell;
-    
-    
+
 }
 
 
@@ -82,7 +81,7 @@ UITableViewDataSource
     if (cls) {
         [self.navigationController pushViewController:[cls new] animated:YES];
     }
-} 
+}
 
 
 @end
