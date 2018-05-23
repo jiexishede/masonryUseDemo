@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
+#import "testMarginViewController.h"
 
 @interface ViewController ()
 <
@@ -83,6 +84,9 @@ UITableViewDataSource
     // 注意 这里没有"Import控制器 "就能创建了!!!
     if (cls) {
         [self.navigationController pushViewController:[cls new] animated:YES];
+    }
+    if( indexPath.row == 9) {
+        [self.navigationController pushViewController:[testMarginViewController new] animated:YES];
     }
 }
 

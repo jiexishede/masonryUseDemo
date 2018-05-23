@@ -70,8 +70,8 @@
             make.height.equalTo(v2).dividedBy(2.0);
             make.centerY.equalTo(v2);
             //会 crash
-//            make.left.equalTo(v2.mas_rightMargin);
-            make.left.equalTo(v2.mas_right);
+            make.left.equalTo(v2.mas_rightMargin);
+//            make.left.equalTo(v2.mas_right);
             
             //
 //            make.edges.equalTo(v2).insets;
