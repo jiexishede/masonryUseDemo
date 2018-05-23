@@ -25,7 +25,9 @@
 // 测试 git 命令 ci alias
 // 测试 git alias difftool
 
-// 测试 git alias md 
+// 测试 git alias md
+
+// 测试 git dash 的评论
 
 - (CGSize)intrinsicContentSize {
     
