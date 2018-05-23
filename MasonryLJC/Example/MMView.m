@@ -23,6 +23,8 @@
 // autolayout 没有设置 宽高的话就可以使用这个 值 来设定宽度
 
 // 测试 git 命令 ci alias
+// 测试 git alias difftool 
+
 - (CGSize)intrinsicContentSize {
     
     CGSize size = [super intrinsicContentSize];
